@@ -1154,7 +1154,7 @@
             "data": {
               "type": "tm.Process",
               "name": "P6 —\n API \nGateway",
-              "description": "",
+              "description": "RBAC + MFA, mTLS, Rate-Limit, WAF",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1164,6 +1164,13 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
