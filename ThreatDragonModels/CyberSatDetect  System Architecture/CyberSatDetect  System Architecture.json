@@ -67,13 +67,6 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -801,7 +794,7 @@
             "data": {
               "type": "tm.Process",
               "name": "P3 — \nAnomaly\n Detection",
-              "description": "",
+              "description": "Source validation, sandboxed retraining, A-GEM replay, model signing",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -935,8 +928,8 @@
           },
           {
             "position": {
-              "x": 110,
-              "y": 320
+              "x": 320,
+              "y": 330
             },
             "size": {
               "width": 70,
@@ -1529,13 +1522,6 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
