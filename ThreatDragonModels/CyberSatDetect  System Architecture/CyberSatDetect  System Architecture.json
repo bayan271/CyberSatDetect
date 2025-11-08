@@ -1398,13 +1398,6 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1518,7 +1511,7 @@
             "data": {
               "type": "tm.Store",
               "name": "D3 — Anomaly Cases Store",
-              "description": "",
+              "description": "Immutable (WORM), Offsite backups, SIEM alerts",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1529,6 +1522,13 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
