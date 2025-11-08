@@ -67,6 +67,13 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -928,8 +935,8 @@
           },
           {
             "position": {
-              "x": 320,
-              "y": 330
+              "x": 110,
+              "y": 320
             },
             "size": {
               "width": 70,
