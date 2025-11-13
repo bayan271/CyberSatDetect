@@ -38,7 +38,7 @@
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB-1: Satellite Environment",
-              "description": "",
+              "description": "تمثل البيئة الخارجية (الفضائية) اللي تجي منها البيانات — الأقمار الصناعية والمحاكيات\nنطاق غير موثوق بالكامل لأن البيانات تجي من مصادر خارجية وقد تحتوي هجمات أو ضوضاء",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             }
@@ -64,7 +64,7 @@
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB-2: Detection&Learning Zone",
-              "description": "",
+              "description": "النطاق الداخلي الرئيسي للنظام الذكي — فيه خوارزميات التعلم والذكاء الاصطناعي\nنطاق نصف موثوق، فيه حماية قوية لكن قابل للاستهداف عبر البيانات أو النماذج",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             }
@@ -90,7 +90,7 @@
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB-3: Sensitive Data ",
-              "description": "",
+              "description": "المنطقة المحمية لتخزين البيانات الحساسة مثل التليمتر والسجلات والنماذج\nنطاق موثوق جدًا ومحمي بالتشفير وقيود الوصول",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             }
@@ -203,7 +203,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "E1 — OPS-SAT (ESA)",
-              "description": "",
+              "description": "لقمر الصناعي الحقيقي من وكالة الفضاء الأوروبية، يرسل بيانات التليمتر (مثل الحرارة، الطاقة، النشاط الشبكي)",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -320,7 +320,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "E2 — SimSat / GMAT",
-              "description": "",
+              "description": "بيئة محاكاة تستخدم لاختبار الهجمات والسيناريوهات التجريبية",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -437,7 +437,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "E3 — Ground Station / Operator",
-              "description": "",
+              "description": "مشغّل النظام الأرضي أو فريق الأمن اللي يتابع التقارير ويرسل استعلامات",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -554,7 +554,7 @@
             "data": {
               "type": "tm.Process",
               "name": "P1 — \nData \nAcquisition",
-              "description": "",
+              "description": "ستقبل بيانات التليمتر من الأقمار (E1) والمحاكيات (E2) عبر الـ API",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -674,7 +674,7 @@
             "data": {
               "type": "tm.Process",
               "name": "P2 —\n Pre\nprocessing",
-              "description": "",
+              "description": "ينظّف البيانات (إزالة القيم الشاذة، التطبيع، التقسيم الزمني)",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -794,7 +794,7 @@
             "data": {
               "type": "tm.Process",
               "name": "P3 — \nAnomaly\n Detection",
-              "description": "",
+              "description": "يطبّق خوارزميات الذكاء الاصطناعي (Isolation Forest, Autoencoder, LSTM) للكشف عن السلوك غير الطبيعي",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -914,7 +914,7 @@
             "data": {
               "type": "tm.Process",
               "name": "P4 — \nReporting &\n Evaluation",
-              "description": "",
+              "description": "ولّد التقارير ويحسب المقاييس (Accuracy, Recall, F1-Score) ويعرضها على المشغّل الأرضي",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1034,7 +1034,7 @@
             "data": {
               "type": "tm.Process",
               "name": "P5 — \nContinuous \nLearning",
-              "description": "",
+              "description": "تتعلّم من الحالات الجديدة وتحسّن النموذج تدريجيًا",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1154,7 +1154,7 @@
             "data": {
               "type": "tm.Process",
               "name": "P6 —\n API \nGateway",
-              "description": "RBAC + MFA, mTLS, Rate-Limit, WAF",
+              "description": "واجهة الربط بين النظام والكيانات الخارجية (المحاكيات، المحطات، الخدمات الأخرى)\nRBAC + MFA, mTLS, Rate-Limit, WAF",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1187,7 +1187,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Real Telemetry",
-              "description": "",
+              "description": "بيانات الأقمار الحقيقية تدخل النظام",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1238,7 +1238,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Training Batches.",
-              "description": "",
+              "description": "تغذية وحدة التعلم المستمر ببيانات تدريب جديدة",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1289,7 +1289,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Deploy Updated Model.\n",
-              "description": "",
+              "description": "إرسال النموذج الجديد لوحدة الكشف للتطبيق",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1340,7 +1340,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Alerts & Scores.\n",
-              "description": "",
+              "description": "إرسال نتائج التحليل (تنبيهات ونسب كشف) إلى التقارير",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1385,7 +1385,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Detections / Timestamps.",
-              "description": "",
+              "description": "تسجيل التنبيهات في السجلات الزمنية",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1436,7 +1436,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Verified Anomalies",
-              "description": "",
+              "description": "حفظ الحالات الموثوقة بعد التحقق",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1487,7 +1487,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Features / Segments",
-              "description": "",
+              "description": "إرسال السمات المستخلصة إلى خوارزميات الكشف",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1533,7 +1533,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Model Versions",
-              "description": "",
+              "description": "حفظ وإرجاع النماذج الجديدة والمحدثة",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1560,102 +1560,6 @@
               {
                 "x": 577.5,
                 "y": 480
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Raw Streams.",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Raw Streams."
-            ],
-            "id": "5cd0e987-5758-43d9-b1a0-9e6ae71dfb6e",
-            "source": {
-              "cell": "ef2ccca6-ac6f-4f0d-a0eb-c2ef665a7237"
-            },
-            "target": {
-              "cell": "7119b833-7919-4fec-807e-889585af2fc5",
-              "port": "1600ec6c-e2f8-4c9a-bffe-8545ef230af1"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Validated Input.",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Validated Input."
-            ],
-            "id": "9a4a0a14-2fd8-42c5-ab05-334d8b2f025e",
-            "source": {
-              "x": 660,
-              "y": 300
-            },
-            "target": {
-              "cell": "ef2ccca6-ac6f-4f0d-a0eb-c2ef665a7237",
-              "port": "9636d8ea-cdf1-4217-97bb-170dbefed98b"
-            },
-            "vertices": [
-              {
-                "x": 270,
-                "y": 280
               }
             ]
           },
@@ -1719,106 +1623,6 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              ""
-            ],
-            "id": "bdf47cbb-cd26-4722-a5f5-05b8a862ad38",
-            "source": {
-              "x": 520,
-              "y": -30
-            },
-            "target": {
-              "cell": "ed0968f5-afc0-437a-9e16-238469635412",
-              "port": "0a87d896-2aef-4ad6-9e49-7b960d375b47"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Queries / Auth.",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Queries / Auth."
-            ],
-            "id": "71c2ded8-faa0-4162-b9ec-51f5fcb81e56",
-            "source": {
-              "cell": "3d193613-80e1-4452-8074-eed4e3391270",
-              "port": "0ccb16d7-b944-473b-9c14-47fd3cdd8d46"
-            },
-            "target": {
-              "cell": "12406d8e-f315-4484-9f80-d2bc276e95ec",
-              "port": "0a87d896-2aef-4ad6-9e49-7b960d375b47"
-            },
-            "vertices": [
-              {
-                "x": 450,
-                "y": 80
-              },
-              {
-                "x": 500,
-                "y": 130
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
                   "name": ""
                 },
                 "strokeDasharray": null
@@ -1831,7 +1635,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Simulated Telemetry \n/ Attack Scenarios",
-              "description": "",
+              "description": "بيانات محاكاة الهجمات تدخل عبر الـ API",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1874,6 +1678,203 @@
                   "name": "block"
                 },
                 "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Validated Input.",
+              "description": "البيانات بعد التحقق من صلاحيتها تنتقل إلى وحدة الاستقبال",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Validated Input."
+            ],
+            "id": "9a4a0a14-2fd8-42c5-ab05-334d8b2f025e",
+            "source": {
+              "x": 660,
+              "y": 300
+            },
+            "target": {
+              "cell": "ef2ccca6-ac6f-4f0d-a0eb-c2ef665a7237",
+              "port": "9636d8ea-cdf1-4217-97bb-170dbefed98b"
+            },
+            "vertices": [
+              {
+                "x": 270,
+                "y": 280
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Raw Streams.",
+              "description": "البيانات الخام تنتقل للمعالجة",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Raw Streams."
+            ],
+            "id": "5cd0e987-5758-43d9-b1a0-9e6ae71dfb6e",
+            "source": {
+              "cell": "ef2ccca6-ac6f-4f0d-a0eb-c2ef665a7237"
+            },
+            "target": {
+              "cell": "7119b833-7919-4fec-807e-889585af2fc5",
+              "port": "1600ec6c-e2f8-4c9a-bffe-8545ef230af1"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Dashboards / Reports",
+              "description": "عرض النتائج للمشغّل واستقبال ملاحظاته",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Dashboards / Reports"
+            ],
+            "id": "bdf47cbb-cd26-4722-a5f5-05b8a862ad38",
+            "source": {
+              "x": 520,
+              "y": -30
+            },
+            "target": {
+              "cell": "ed0968f5-afc0-437a-9e16-238469635412",
+              "port": "0a87d896-2aef-4ad6-9e49-7b960d375b47"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Queries / Auth.",
+              "description": "طلبات الوصول والمصادقة عبر الـ API",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Queries / Auth."
+            ],
+            "id": "71c2ded8-faa0-4162-b9ec-51f5fcb81e56",
+            "source": {
+              "cell": "3d193613-80e1-4452-8074-eed4e3391270",
+              "port": "0ccb16d7-b944-473b-9c14-47fd3cdd8d46"
+            },
+            "target": {
+              "cell": "12406d8e-f315-4484-9f80-d2bc276e95ec",
+              "port": "0a87d896-2aef-4ad6-9e49-7b960d375b47"
+            },
+            "vertices": [
+              {
+                "x": 450,
+                "y": 80
+              },
+              {
+                "x": 500,
+                "y": 130
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
                   "name": "block"
                 },
                 "strokeDasharray": null
@@ -1886,7 +1887,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Audit Reads / Forensics.",
-              "description": "",
+              "description": "وصول آمن إلى السجلات للتحقيق والمراجعة",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1918,7 +1919,17 @@
                 "x": 845,
                 "y": 470
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "position": {
@@ -2031,7 +2042,7 @@
             "data": {
               "type": "tm.Store",
               "name": "D1 — Telemetry DB",
-              "description": "AES-256 at-rest, TLS/IPsec in-transit, SHA-256 integrity",
+              "description": "قاعدة بيانات تخزن التليمتر الخام والمعالجة\nAES-256 at-rest, TLS/IPsec in-transit, SHA-256 integrity",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -2155,7 +2166,7 @@
             "data": {
               "type": "tm.Store",
               "name": "D3 — Anomaly Cases Store",
-              "description": "Immutable (WORM), Offsite backups, SIEM alerts",
+              "description": "تخزن الحالات الموثقة بعد التحقق \nImmutable (WORM), Offsite backups, SIEM alerts",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -2279,7 +2290,7 @@
             "data": {
               "type": "tm.Store",
               "name": "D4 — Model Repository",
-              "description": "",
+              "description": "تخزن نسخ النماذج القديمة والجديدة",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -2403,7 +2414,7 @@
             "data": {
               "type": "tm.Store",
               "name": "D2 — Incident & Audit Logs",
-              "description": "",
+              "description": "تسجل كل الأحداث والأنشطة (Alerts, Updates, Access Logs)",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
