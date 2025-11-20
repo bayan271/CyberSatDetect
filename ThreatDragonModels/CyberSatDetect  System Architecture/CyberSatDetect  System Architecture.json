@@ -1263,7 +1263,7 @@
             },
             "vertices": [
               {
-                "x": 400,
+                "x": 500,
                 "y": 480
               }
             ]
@@ -1511,57 +1511,6 @@
               "port": "1600ec6c-e2f8-4c9a-bffe-8545ef230af1"
             },
             "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Model Versions",
-              "description": "حفظ وإرجاع النماذج الجديدة والمحدثة",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Model Versions"
-            ],
-            "id": "3e66f9d3-53c9-4f95-8199-af1ee5b73a01",
-            "source": {
-              "cell": "5b93e26d-6d16-46aa-93b7-4d824bd99ae3",
-              "port": "9636d8ea-cdf1-4217-97bb-170dbefed98b"
-            },
-            "target": {
-              "cell": "c301a3dc-bb81-47c6-b686-6a8fef9e58dc",
-              "port": "d6a7b6ad-da9c-4c29-b4b5-5c2bd6555620"
-            },
-            "vertices": [
-              {
-                "x": 577.5,
-                "y": 480
-              }
-            ]
           },
           {
             "shape": "flow",
@@ -1910,16 +1859,6 @@
               "cell": "29b7c652-e919-49bf-ab21-887255d20d6f",
               "port": "d6a7b6ad-da9c-4c29-b4b5-5c2bd6555620"
             },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            },
             "vertices": [
               {
                 "x": 740,
@@ -2057,7 +1996,7 @@
           },
           {
             "position": {
-              "x": 290,
+              "x": 415,
               "y": 560
             },
             "size": {
@@ -2167,130 +2106,6 @@
               "type": "tm.Store",
               "name": "D3 — Anomaly Cases Store",
               "description": "تخزن الحالات الموثقة بعد التحقق \nImmutable (WORM), Offsite backups, SIEM alerts",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isALog": false,
-              "isEncrypted": false,
-              "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 547.5,
-              "y": 560
-            },
-            "size": {
-              "width": 120,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "D4 — Model Repository"
-              },
-              "topLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "bottomLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "store",
-            "zIndex": 13,
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "d6a7b6ad-da9c-4c29-b4b5-5c2bd6555620"
-                },
-                {
-                  "group": "right",
-                  "id": "382534d6-3f49-4132-abd6-38c23d4187ec"
-                },
-                {
-                  "group": "bottom",
-                  "id": "89f8503d-bc60-4113-b943-2a2e34571788"
-                },
-                {
-                  "group": "left",
-                  "id": "0f16bc90-abfb-49a0-b738-d15a81a67129"
-                }
-              ]
-            },
-            "id": "c301a3dc-bb81-47c6-b686-6a8fef9e58dc",
-            "data": {
-              "type": "tm.Store",
-              "name": "D4 — Model Repository",
-              "description": "تخزن نسخ النماذج القديمة والجديدة",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
