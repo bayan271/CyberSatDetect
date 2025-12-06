@@ -1950,7 +1950,7 @@
             },
             "attrs": {
               "text": {
-                "text": "E1 - Web user / Analyst "
+                "text": "E1 - Web user"
               },
               "body": {
                 "stroke": "#333333",
@@ -2046,7 +2046,7 @@
             "id": "ab3f893c-3076-4cae-b5e5-30e0b2a9f4da",
             "data": {
               "type": "tm.Actor",
-              "name": "E1 - Web user / Analyst ",
+              "name": "E1 - Web user",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -2058,6 +2058,8 @@
             "children": [],
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
                 "boundary",
                 "button-remove"
               ],
