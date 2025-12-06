@@ -953,7 +953,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Login,\n Upload file,\nView Resulys",
+              "name": "Login,\n Upload file,\nView Results",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -966,7 +966,7 @@
               "threats": []
             },
             "labels": [
-              "Login,\n Upload file,\nView Resulys"
+              "Login,\n Upload file,\nView Results"
             ],
             "id": "6bb37471-7ed3-49b2-b679-cc16df4aa015",
             "source": {
@@ -982,7 +982,17 @@
                 "x": 320,
                 "y": -180
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -2055,16 +2065,7 @@
               "providesAuthentication": false,
               "threats": []
             },
-            "children": [],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            }
+            "children": []
           },
           {
             "position": {
