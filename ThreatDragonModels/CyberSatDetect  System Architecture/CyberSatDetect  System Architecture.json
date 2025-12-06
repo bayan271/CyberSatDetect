@@ -853,7 +853,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Anomaly\nscore +\nLabels +\nSummary",
+              "name": "Anomaly\nscore +\nLabels",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -866,7 +866,7 @@
               "threats": []
             },
             "labels": [
-              "Anomaly\nscore +\nLabels +\nSummary"
+              "Anomaly\nscore +\nLabels"
             ],
             "id": "1fe93d6a-8a64-45bb-8312-4a8e967574b2",
             "source": {
@@ -977,12 +977,6 @@
               "cell": "4c675d21-000a-4fd1-8ec4-79dd921e260a",
               "port": "f3dc4740-204c-4b47-81fb-8465a6ad364e"
             },
-            "vertices": [
-              {
-                "x": 320,
-                "y": -180
-              }
-            ],
             "tools": {
               "items": [
                 "boundary",
@@ -992,7 +986,13 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 320,
+                "y": -180
+              }
+            ]
           },
           {
             "shape": "flow",
