@@ -2590,7 +2590,7 @@
             },
             "attrs": {
               "text": {
-                "text": "D5 — Incident & Audit Logs"
+                "text": "D5 — "
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -2689,7 +2689,7 @@
             "id": "b369e478-7cef-4217-bc5c-832d1063eaf4",
             "data": {
               "type": "tm.Store",
-              "name": "D5 — Incident & Audit Logs",
+              "name": "D5 — ",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2701,6 +2701,13 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           }
         ]
