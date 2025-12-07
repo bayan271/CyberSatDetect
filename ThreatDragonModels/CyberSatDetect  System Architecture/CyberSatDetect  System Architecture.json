@@ -132,8 +132,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "929b38cf-f1cf-4631-95bd-7cdcc8c501ac",
             "zIndex": -1,
+            "id": "929b38cf-f1cf-4631-95bd-7cdcc8c501ac",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB - ",
@@ -717,7 +717,13 @@
             "target": {
               "cell": "4e632d91-7b45-44ae-b269-71782b9d0c37",
               "port": "534ce20f-d5e1-40f1-bfe9-95a84cb305ca"
-            }
+            },
+            "vertices": [
+              {
+                "x": 650,
+                "y": 520
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -2473,6 +2479,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 22,
             "ports": {
               "groups": {
                 "top": {
@@ -2570,8 +2577,7 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "zIndex": 22
+            }
           },
           {
             "position": {
@@ -2597,6 +2603,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 23,
             "ports": {
               "groups": {
                 "top": {
@@ -2694,14 +2701,6 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "zIndex": 23,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           }
         ]
