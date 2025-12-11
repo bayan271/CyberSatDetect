@@ -19,42 +19,16 @@
         "cells": [
           {
             "position": {
-              "x": 254.99999999999955,
-              "y": -90.00000000000227
+              "x": 560,
+              "y": -314.99999999999994
             },
             "size": {
               "width": 420,
-              "height": 180
+              "height": 990
             },
             "attrs": {
               "label": {
-                "text": "TB-"
-              }
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "zIndex": -1,
-            "id": "5187f39c-fbf3-4858-9830-31b839d9a8c0",
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "TB-",
-              "description": "تمثل البيئة الخارجية (الفضائية) اللي تجي منها البيانات — الأقمار الصناعية والمحاكيات\nنطاق غير موثوق بالكامل لأن البيانات تجي من مصادر خارجية وقد تحتوي هجمات أو ضوضاء",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            }
-          },
-          {
-            "position": {
-              "x": 689.9999999999957,
-              "y": -80.00000000000045
-            },
-            "size": {
-              "width": 290,
-              "height": 730
-            },
-            "attrs": {
-              "label": {
-                "text": "TB-3: Zone"
+                "text": "TB-2: Trust Zone"
               }
             },
             "visible": true,
@@ -63,7 +37,7 @@
             "id": "91ea0c9f-8aa2-4885-bc19-e59d77a51489",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "TB-3: Zone",
+              "name": "TB-2: Trust Zone",
               "description": "النطاق الداخلي الرئيسي للنظام الذكي — فيه خوارزميات التعلم والذكاء الاصطناعي\nنطاق نصف موثوق، فيه حماية قوية لكن قابل للاستهداف عبر البيانات أو النماذج",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -71,38 +45,17 @@
           },
           {
             "position": {
-              "x": 419.9999999999975,
-              "y": -280
-            },
-            "size": {
-              "width": 510,
-              "height": 150
-            },
-            "attrs": {
-              "label": {
-                "text": "TB-2: Web Zone"
-              }
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "zIndex": -1,
-            "id": "f68145de-9604-4b3a-97e0-37cf3eb96612",
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "TB-2: Web Zone",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            }
-          },
-          {
-            "position": {
               "x": 1000,
-              "y": -295
+              "y": -314.99999999999994
             },
             "size": {
               "width": 320,
-              "height": 970
+              "height": 990
+            },
+            "attrs": {
+              "label": {
+                "text": "TB-3: Sensitive Zone"
+              }
             },
             "visible": true,
             "shape": "trust-boundary-box",
@@ -110,7 +63,7 @@
             "id": "622efe24-b6c2-4770-a06b-27aeb7e2f8fa",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "Trust Boundary",
+              "name": "TB-3: Sensitive Zone",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -118,8 +71,34 @@
           },
           {
             "position": {
-              "x": 755,
-              "y": -250.00000000000034
+              "x": 230,
+              "y": -280
+            },
+            "size": {
+              "width": 320,
+              "height": 190
+            },
+            "attrs": {
+              "label": {
+                "text": "TB-1: External Zone"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "1ff79932-d791-4efd-9f66-0ed553ba7f48",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB-1: External Zone",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 820,
+              "y": -270
             },
             "size": {
               "width": 130,
@@ -403,7 +382,11 @@
             },
             "vertices": [
               {
-                "x": 670,
+                "x": 820,
+                "y": -250
+              },
+              {
+                "x": 690,
                 "y": -250
               }
             ]
@@ -499,8 +482,8 @@
             },
             "vertices": [
               {
-                "x": 660,
-                "y": -180
+                "x": 710,
+                "y": -200
               }
             ]
           },
@@ -654,51 +637,6 @@
                 "y": 260
               }
             ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Telemtry Data",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Telemtry Data"
-            ],
-            "id": "88ed0ddf-66e4-42b9-a0ec-3c7038e8006f",
-            "source": {
-              "x": 810,
-              "y": -160
-            },
-            "target": {
-              "x": 830,
-              "y": -70
-            }
           },
           {
             "shape": "flow",
@@ -1012,163 +950,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "System Management",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "System Management"
-            ],
-            "id": "95fa912f-f113-4a70-856e-f8524fa65aeb",
-            "source": {
-              "cell": "3aa139d6-c95f-40e7-85ae-3522534642f7",
-              "port": "3cee63c5-c17b-4717-be6b-f05fbd84bfb4"
-            },
-            "target": {
-              "cell": "bfa6c88b-f955-48c7-8675-e1ec3815735d",
-              "port": "1600ec6c-e2f8-4c9a-bffe-8545ef230af1"
-            },
-            "vertices": [
-              {
-                "x": 370,
-                "y": -200
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "User Actions",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "User Actions"
-            ],
-            "id": "55413f22-19e6-4bdd-8c92-b549e7b03094",
-            "source": {
-              "x": 520,
-              "y": -10
-            },
-            "target": {
-              "cell": "bfa6c88b-f955-48c7-8675-e1ec3815735d",
-              "port": "9636d8ea-cdf1-4217-97bb-170dbefed98b"
-            },
-            "vertices": [
-              {
-                "x": 520,
-                "y": -40
-              },
-              {
-                "x": 510,
-                "y": -70
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "System Monitoring",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "System Monitoring"
-            ],
-            "id": "a591c5b2-0d20-4158-81e8-011d1b2c961e",
-            "source": {
-              "x": 475,
-              "y": -169
-            },
-            "target": {
-              "cell": "3aa139d6-c95f-40e7-85ae-3522534642f7",
-              "port": "dc301496-26a5-48aa-951b-abdad383f3ba"
-            },
-            "vertices": [
-              {
-                "x": 410,
-                "y": -120
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Admin Read",
               "description": "",
               "outOfScope": false,
@@ -1271,65 +1052,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Admin Edit",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Admin Edit"
-            ],
-            "id": "0f6a0dd5-c973-4044-8380-4def7a9b64b9",
-            "source": {
-              "x": 860,
-              "y": -160
-            },
-            "target": {
-              "cell": "db71a17c-fa00-43e5-b110-dd91080d2602",
-              "port": "8cd56b53-b3c2-47bb-8b17-8317b871f7c2"
-            },
-            "vertices": [
-              {
-                "x": 930,
-                "y": -70
-              },
-              {
-                "x": 950,
-                "y": -40
-              },
-              {
-                "x": 980,
-                "y": -20
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Export Report",
               "description": "",
               "outOfScope": false,
@@ -1355,6 +1077,10 @@
               "port": "32c34350-22f2-43db-b64e-090096a08d0d"
             },
             "vertices": [
+              {
+                "x": 1230,
+                "y": 390
+              },
               {
                 "x": 1250,
                 "y": 80
@@ -1468,57 +1194,6 @@
               {
                 "x": 950,
                 "y": -120
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "System Output:",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "System Output:"
-            ],
-            "id": "dee78b0f-548d-48bd-8ccd-690310d7dc13",
-            "source": {
-              "cell": "bfa6c88b-f955-48c7-8675-e1ec3815735d",
-              "port": "9636d8ea-cdf1-4217-97bb-170dbefed98b"
-            },
-            "target": {
-              "cell": "ab3f893c-3076-4cae-b5e5-30e0b2a9f4da",
-              "port": "dc301496-26a5-48aa-951b-abdad383f3ba"
-            },
-            "vertices": [
-              {
-                "x": 580,
-                "y": -110
               }
             ]
           },
@@ -1714,9 +1389,315 @@
             "vertices": []
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Telemtry Data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Telemtry Data"
+            ],
+            "id": "88ed0ddf-66e4-42b9-a0ec-3c7038e8006f",
+            "source": {
+              "x": 860,
+              "y": -180
+            },
+            "target": {
+              "x": 830,
+              "y": -70
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Admin Edit",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Admin Edit"
+            ],
+            "id": "0f6a0dd5-c973-4044-8380-4def7a9b64b9",
+            "source": {
+              "cell": "ef2ccca6-ac6f-4f0d-a0eb-c2ef665a7237",
+              "port": "9636d8ea-cdf1-4217-97bb-170dbefed98b"
+            },
+            "target": {
+              "cell": "db71a17c-fa00-43e5-b110-dd91080d2602",
+              "port": "8cd56b53-b3c2-47bb-8b17-8317b871f7c2"
+            },
+            "vertices": [
+              {
+                "x": 930,
+                "y": -70
+              },
+              {
+                "x": 950,
+                "y": -40
+              },
+              {
+                "x": 980,
+                "y": -20
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": " System Monitoring",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              " System Monitoring"
+            ],
+            "id": "aad0e906-05b3-4200-a59b-bc40038256cb",
+            "source": {
+              "x": 610,
+              "y": -180
+            },
+            "target": {
+              "x": 470,
+              "y": -150
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "System Management",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "System Management"
+            ],
+            "id": "0f457eee-3870-4a13-9c09-f8e6bb38e06a",
+            "source": {
+              "x": 460,
+              "y": -140
+            },
+            "target": {
+              "x": 610,
+              "y": -190
+            },
+            "vertices": [
+              {
+                "x": 560,
+                "y": -140
+              },
+              {
+                "x": 610,
+                "y": -170
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Output",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Output"
+            ],
+            "id": "d33ddc43-ecd5-45ef-98d5-bbbc042189da",
+            "source": {
+              "x": 578,
+              "y": -225
+            },
+            "target": {
+              "cell": "ab3f893c-3076-4cae-b5e5-30e0b2a9f4da",
+              "port": "7d4ac420-093b-4f08-9972-fe69467ecb9a"
+            },
+            "vertices": [
+              {
+                "x": 530,
+                "y": -200
+              },
+              {
+                "x": 490,
+                "y": -200
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": " Actions ",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              " Actions "
+            ],
+            "id": "75e55e69-7be0-499d-9193-87a8ea38702b",
+            "source": {
+              "cell": "ab3f893c-3076-4cae-b5e5-30e0b2a9f4da",
+              "port": "7d4ac420-093b-4f08-9972-fe69467ecb9a"
+            },
+            "target": {
+              "cell": "bfa6c88b-f955-48c7-8675-e1ec3815735d",
+              "port": "1600ec6c-e2f8-4c9a-bffe-8545ef230af1"
+            },
+            "vertices": []
+          },
+          {
             "position": {
-              "x": 484.99999999999955,
-              "y": -30.000000000002274
+              "x": 280,
+              "y": -250
             },
             "size": {
               "width": 190,
@@ -1833,8 +1814,8 @@
           },
           {
             "position": {
-              "x": 284.99999999999955,
-              "y": -30.000000000002274
+              "x": 280,
+              "y": -180
             },
             "size": {
               "width": 190,
@@ -2319,7 +2300,7 @@
             },
             "attrs": {
               "text": {
-                "text": "D1 -  Incident Logs\nFor UI Error"
+                "text": "D3 -  Incident Logs\nFor UI Error"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -2418,7 +2399,7 @@
             "id": "66e99f22-8595-4c9a-924a-43e8cd9e190a",
             "data": {
               "type": "tm.Store",
-              "name": "D1 -  Incident Logs\nFor UI Error",
+              "name": "D3 -  Incident Logs\nFor UI Error",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2443,7 +2424,7 @@
             },
             "attrs": {
               "text": {
-                "text": "D2 - Incident Logs\nFor System Error"
+                "text": "D2- Incident Logs\nFor System Error"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -2542,7 +2523,7 @@
             "id": "c05e7c11-dfa6-4998-9845-a6526bab9241",
             "data": {
               "type": "tm.Store",
-              "name": "D2 - Incident Logs\nFor System Error",
+              "name": "D2- Incident Logs\nFor System Error",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2559,7 +2540,7 @@
           {
             "position": {
               "x": 1030,
-              "y": -295
+              "y": -280
             },
             "size": {
               "width": 120,
@@ -2567,7 +2548,7 @@
             },
             "attrs": {
               "text": {
-                "text": "D3 - session DB"
+                "text": "D1 - session DB"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -2666,7 +2647,7 @@
             "id": "ca91174f-9601-4991-a705-66a3bb757fb2",
             "data": {
               "type": "tm.Store",
-              "name": "D3 - session DB",
+              "name": "D1 - session DB",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -3063,7 +3044,7 @@
             },
             "attrs": {
               "text": {
-                "text": "D6 - Normal Segment Store"
+                "text": "D8 - Normal Segment Store"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -3162,7 +3143,7 @@
             "id": "28f8e838-f06a-40ae-a01c-8e7974398b8e",
             "data": {
               "type": "tm.Store",
-              "name": "D6 - Normal Segment Store",
+              "name": "D8 - Normal Segment Store",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -3302,8 +3283,8 @@
           },
           {
             "position": {
-              "x": 1060,
-              "y": 540
+              "x": 1040,
+              "y": 500
             },
             "size": {
               "width": 120,
@@ -3426,8 +3407,8 @@
           },
           {
             "position": {
-              "x": 445,
-              "y": -250.00000000000034
+              "x": 560,
+              "y": -280
             },
             "size": {
               "width": 130,
