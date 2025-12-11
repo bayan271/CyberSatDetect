@@ -85,8 +85,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "1ff79932-d791-4efd-9f66-0ed553ba7f48",
             "zIndex": -1,
+            "id": "1ff79932-d791-4efd-9f66-0ed553ba7f48",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB-1: External Zone",
@@ -3546,6 +3546,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 46,
             "ports": {
               "groups": {
                 "top": {
@@ -3629,7 +3630,6 @@
               ]
             },
             "id": "f596d768-b5d4-4b00-9a75-5fe413c574bc",
-            "zIndex": 46,
             "data": {
               "type": "tm.Process",
               "name": "P3-\n Data \nAcquisition",
