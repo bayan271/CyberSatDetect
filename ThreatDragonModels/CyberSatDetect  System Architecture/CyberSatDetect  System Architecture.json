@@ -227,7 +227,7 @@
             },
             "attrs": {
               "text": {
-                "text": "P5-\nAnomaly\n Detection"
+                "text": "P4-\nAnomaly\n Detection"
               },
               "body": {
                 "stroke": "#333333",
@@ -323,7 +323,7 @@
             "id": "bd6017d9-ee0c-4277-bb2f-fc789dc7bff7",
             "data": {
               "type": "tm.Process",
-              "name": "P5-\nAnomaly\n Detection",
+              "name": "P4-\nAnomaly\n Detection",
               "description": "يطبّق خوارزميات الذكاء الاصطناعي (Isolation Forest, Autoencoder, LSTM) للكشف عن السلوك غير الطبيعي",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1929,7 +1929,7 @@
             },
             "attrs": {
               "text": {
-                "text": "P6 -\nContinual \nLearnin"
+                "text": "P5 -\nContinual \nLearnin"
               },
               "body": {
                 "stroke": "#333333",
@@ -2025,7 +2025,7 @@
             "id": "c64f9e94-e084-4c00-949f-370788dee046",
             "data": {
               "type": "tm.Process",
-              "name": "P6 -\nContinual \nLearnin",
+              "name": "P5 -\nContinual \nLearnin",
               "description": "يطبّق خوارزميات الذكاء الاصطناعي (Isolation Forest, Autoencoder, LSTM) للكشف عن السلوك غير الطبيعي",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2049,7 +2049,7 @@
             },
             "attrs": {
               "text": {
-                "text": "P4 -\nPre-\nProcessing"
+                "text": "P3 -\nPre-\nProcessing"
               },
               "body": {
                 "stroke": "#333333",
@@ -2145,7 +2145,7 @@
             "id": "10296884-bbb5-439d-9391-248607884a95",
             "data": {
               "type": "tm.Process",
-              "name": "P4 -\nPre-\nProcessing",
+              "name": "P3 -\nPre-\nProcessing",
               "description": "يطبّق خوارزميات الذكاء الاصطناعي (Isolation Forest, Autoencoder, LSTM) للكشف عن السلوك غير الطبيعي",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2169,7 +2169,7 @@
             },
             "attrs": {
               "text": {
-                "text": "P7 -\nReport\n"
+                "text": "P6 -\nReport\n"
               },
               "body": {
                 "stroke": "#333333",
@@ -2265,7 +2265,7 @@
             "id": "f3b4a0ad-3b63-43ee-9021-f0a70771aed6",
             "data": {
               "type": "tm.Process",
-              "name": "P7 -\nReport\n",
+              "name": "P6 -\nReport\n",
               "description": "يطبّق خوارزميات الذكاء الاصطناعي (Isolation Forest, Autoencoder, LSTM) للكشف عن السلوك غير الطبيعي",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2276,6 +2276,13 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
