@@ -1667,6 +1667,16 @@
               "cell": "ef2ccca6-ac6f-4f0d-a0eb-c2ef665a7237",
               "port": "32c34350-22f2-43db-b64e-090096a08d0d"
             },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            },
             "vertices": [
               {
                 "x": 1270,
@@ -1684,17 +1694,7 @@
                 "x": 1120,
                 "y": -150
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "position": {
