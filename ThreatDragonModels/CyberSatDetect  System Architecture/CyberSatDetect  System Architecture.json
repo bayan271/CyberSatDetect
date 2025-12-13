@@ -458,103 +458,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": " System Monitoring",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              " System Monitoring"
-            ],
-            "id": "aad0e906-05b3-4200-a59b-bc40038256cb",
-            "source": {
-              "cell": "bfa6c88b-f955-48c7-8675-e1ec3815735d",
-              "port": "9636d8ea-cdf1-4217-97bb-170dbefed98b"
-            },
-            "target": {
-              "cell": "3aa139d6-c95f-40e7-85ae-3522534642f7",
-              "port": "7d4ac420-093b-4f08-9972-fe69467ecb9a"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "System Management",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "System Management"
-            ],
-            "id": "0f457eee-3870-4a13-9c09-f8e6bb38e06a",
-            "source": {
-              "cell": "3aa139d6-c95f-40e7-85ae-3522534642f7",
-              "port": "7d4ac420-093b-4f08-9972-fe69467ecb9a"
-            },
-            "target": {
-              "cell": "bfa6c88b-f955-48c7-8675-e1ec3815735d",
-              "port": "9636d8ea-cdf1-4217-97bb-170dbefed98b"
-            },
-            "vertices": [
-              {
-                "x": 520,
-                "y": -100
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "HTTPSE\nResponse",
               "description": "",
               "outOfScope": false,
@@ -1323,17 +1226,7 @@
               "cell": "b1041797-ad74-46ec-adf9-137c5375c34f",
               "port": "8cd56b53-b3c2-47bb-8b17-8317b871f7c2"
             },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -1698,6 +1591,103 @@
               {
                 "x": 1290,
                 "y": -70
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": " System Monitoring",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              " System Monitoring"
+            ],
+            "id": "aad0e906-05b3-4200-a59b-bc40038256cb",
+            "source": {
+              "cell": "bfa6c88b-f955-48c7-8675-e1ec3815735d",
+              "port": "9636d8ea-cdf1-4217-97bb-170dbefed98b"
+            },
+            "target": {
+              "cell": "3aa139d6-c95f-40e7-85ae-3522534642f7",
+              "port": "7d4ac420-093b-4f08-9972-fe69467ecb9a"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "System Management",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "System Management"
+            ],
+            "id": "0f457eee-3870-4a13-9c09-f8e6bb38e06a",
+            "source": {
+              "cell": "3aa139d6-c95f-40e7-85ae-3522534642f7",
+              "port": "7d4ac420-093b-4f08-9972-fe69467ecb9a"
+            },
+            "target": {
+              "cell": "bfa6c88b-f955-48c7-8675-e1ec3815735d",
+              "port": "9636d8ea-cdf1-4217-97bb-170dbefed98b"
+            },
+            "vertices": [
+              {
+                "x": 520,
+                "y": -100
               }
             ]
           },
